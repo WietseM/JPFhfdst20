@@ -5,6 +5,7 @@ import be.vdab.util.LandException;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.math.RoundingMode;
+import java.util.Objects;
 
 public class Land {
     private String landCode;
