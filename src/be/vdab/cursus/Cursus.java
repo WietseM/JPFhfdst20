@@ -64,6 +64,12 @@ public class Cursus implements Comparable<Cursus>{
 
     @Override
     public int compareTo(Cursus c) {
-        return cursusNr - c.getCursusNr();
+        // sorteren op cursusPrijs: consistent met equals()
+        if (this.equals(c)){
+            return 0;
+        }
+        return prijs == c.getPrijs() ? -1 : prijs - c.getPrijs();
     }
+
+
 }
